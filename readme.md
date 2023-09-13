@@ -12,7 +12,7 @@
    cd order-service/src/main/java/com/example/orderservice
    ```
 
-### 2. Custom Exception Handler Implementation
+### 2. Implement the custom exception handler
 1. Create a folder to store scripts related to the custom exception handler:
 
    ```bash
@@ -128,14 +128,18 @@
    // ...
    ```
 
-### 3. Testing
-1. Visit the application's `GetByID` endpoint with an unavailable ID. The result should display a message in the specified format from the custom exception handler.
+### 3. Run and Test
+1. Run the application.
+   ```bash
+	bash mvnw spring-boot:run
+	```
+2. Visit the application's `GetByID` endpoint with an unavailable ID. The result should display a message in the specified format from the custom exception handler.
 
    ![Screenshot 2023-09-13 at 07.31.51.png](_resources/Screenshot%202023-09-13%20at%2007.31.51.png)
    
-### 4. Pushing the solution
+### 4. Push the solution
 1. Push the solution
-	```
+	```bash
 	git add .
 	git commit -m "Implementing custom exception handler"
 	git push -u origin lareza-farhan-wanaghi
