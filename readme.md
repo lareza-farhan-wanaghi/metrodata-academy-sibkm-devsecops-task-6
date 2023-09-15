@@ -5,7 +5,7 @@
 
 ## Solution
 ### 1. Project Setup
-1. Clone the repository on the "lareza-farhan-wanaghi" branch and navigate to the working directory at `order-service/src/main/java/com/example/orderservice`. Ensure you have your credentials ready:
+1. Clone the Order-Service repository on the "lareza-farhan-wanaghi" branch and navigate to the main working directory. Ensure you have your credentials ready:
 
    ```bash
    git clone -b lareza-farhan-wanaghi https://github.com/SIBKM-DevSecOps/order-service.git
@@ -13,15 +13,11 @@
    ```
 
 ### 2. Implement the custom exception handler
-1. Create a folder to store scripts related to the custom exception handler:
+
+1. Create a script to represent the custom exception data:
 
    ```bash
    mkdir exception
-   ```
-
-2. Create a script to represent the custom exception data:
-
-   ```bash
    nano exception/CustomException.java
    ```
 
@@ -49,6 +45,7 @@
 3. Create a model script that will be used as the DTO of the custom exception:
 
    ```bash
+   mkdir model
    nano model/ErrorMessage.java
    ```
 
@@ -72,6 +69,7 @@
 4. Create a utility script to use the custom exception:
 
    ```bash
+   mkdir exception
    nano exception/RestResponseExceptionHandler.java
    ```
 
@@ -131,7 +129,8 @@
 ### 3. Run and Test
 1. Run the application.
    ```bash
-	bash mvnw spring-boot:run
+   cd <Project Root Path>
+   bash mvnw spring-boot:run
 	```
 2. Visit the application's `GetByID` endpoint with an unavailable ID. The result should display a message in the specified format from the custom exception handler.
 
