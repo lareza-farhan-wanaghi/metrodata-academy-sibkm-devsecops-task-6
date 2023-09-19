@@ -1,7 +1,8 @@
 # Metrodata Academy SIBKM DevSecOps Task 6: Custom Exception Handler
 
 ## Objective
-- Implement a custom exception handler in the Order-Service repository.
+1. Implement a custom exception handler in the Order-Service repository.
+2. Push the solution to the provided remote repository.
 
 ## Solution
 ### 1. Project Setup
@@ -9,14 +10,15 @@
 
    ```bash
    git clone -b lareza-farhan-wanaghi https://github.com/SIBKM-DevSecOps/order-service.git
-   cd order-service/src/main/java/com/example/orderservice
+   cd order-service #Project Root Directory
    ```
 
-### 2. Implement the custom exception handler
+### 2. Custom Exception Handler Implementation
 
 1. Create a script to represent the custom exception data:
 
    ```bash
+   cd src/main/java/com/example/orderservice
    mkdir exception
    nano exception/CustomException.java
    ```
@@ -126,7 +128,7 @@
    // ...
    ```
 
-### 3. Run and Test
+### 3. Testing
 1. Run the application.
    ```bash
    cd <Project Root Path>
